@@ -3,7 +3,7 @@
 /// This ADT represents a computing job
 ///
 /// 
-/// Invariants: 1<= Id <= 999 and TimeReceived > 0 and ExecutiinTime > 0 and 1<= Priority <= 9 
+/// Invariants: 1<= Id <= 999 and TimeReceived > 0 and ExecutingTime > 0 and 1<= Priority <= 9 
 /// 
 /// </summary>
 /// 

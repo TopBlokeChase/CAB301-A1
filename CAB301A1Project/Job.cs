@@ -75,50 +75,46 @@ namespace CAB301_A1_Solution
 
         public static bool IsValidId(uint id)
         {
-
-            //To be implemented by students
+            //To be implemented by students - Done
+            //Add Commenting
             if (id >= 1 && id <= 999)
             {
                 return true;
             }
             return false;
-
         }
 
         public static bool IsValidExecutionTime(uint executiontime)
         {
-
-            //To be implemented by students
+            //To be implemented by students - Done
+            //Add Commenting
             if (executiontime <= 0)
             {
                 return false;
             }
             return true;
-
         }
 
         public static bool IsValidPriority(uint priority)
         {
-
-            //To be implemented by students
+            //To be implemented by students - Done
+            //Add Commenting
             if (id >= 1 && id <= 9)
             {
                 return true;
             }
             return false;
-
         }
 
         public static bool IsTimeReceived(uint time)
         {
-
-            //To be implemented by students
+            //To be implemented by students - Done
+            //Add Commenting
             if (id > 0)
             {
                 return true;
             }
             return false;
-
         }
 
         public override string ToString()

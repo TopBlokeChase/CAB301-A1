@@ -1,9 +1,9 @@
-﻿
-
-/// <summary>
-/// This ADT schedules jobs in an associated job collection.
-/// </summary>
-public interface IScheduler {
+﻿namespace CAB301_A1_Solution
+{
+    /// <summary>
+    /// This ADT schedules jobs in an associated job collection.
+    /// </summary>
+    public interface IScheduler {
 
 
 	/// <summary>

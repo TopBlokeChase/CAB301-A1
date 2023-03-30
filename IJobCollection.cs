@@ -1,15 +1,16 @@
-﻿
+﻿namespace CAB301_A1_Solution
+{
 
-/// <summary>
-/// This ADT represents a collection of computing jobs.
-///
-/// 
-/// Invariants: Capacity >=1 and Count <= Capacity and no duplicate in this job collection
-/// 
+    /// <summary>
+    /// This ADT represents a collection of computing jobs.
+    ///
+    /// 
+    /// Invariants: Capacity >=1 and Count <= Capacity and no duplicate in this job collection
+    /// 
 
-/// </summary>
+    /// </summary>
 
-public interface IJobCollection {
+    public interface IJobCollection {
 
 	/// <summary>
 	/// Get the capacity of this job collection

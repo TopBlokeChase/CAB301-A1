@@ -29,27 +29,28 @@ namespace CAB301A1Project
         {
             //To be implemented by students - Done
             //Do commenting
-            if (this.Count >= this.Capacity) throw new ArgumentException();
+            if (count >= this.Capacity) throw new ArgumentException();
             if (this.Contains(job.Id))
             {
                 return false;
             }
             jobs[count++] = job;
             return true;
+            Console.WriteLine();
         }
 
         public bool Contains(uint id)
         {
             //To be implemented by students - Done
             //Do commenting
-            for (int i = 0; i < this.Count; i++)
+            for (int i = 0; i < count; i++)
             {
                 if (jobs[i].Id == id)
                 {
-                    return false;
+                    return true;
                 }
             }
-            return true;
+            return false;
 
         }
 

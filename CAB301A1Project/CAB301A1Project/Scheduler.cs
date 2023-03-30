@@ -46,7 +46,7 @@
         public IJob[] Priority()
         {
             Console.WriteLine("Priority Sort");
-            //To be implemented by students
+            //To be implemented by students - Done
             //Do commenting
             //Uses Bubble Sort
             sortedJobs = Jobs.ToArray();
@@ -80,7 +80,7 @@
         public IJob[] ShortestJobFirst()
         {
             Console.WriteLine("Shortest First Sort");
-            //To be implemented by students
+            //To be implemented by students - Done
             //Do commenting
             //Uses Bubble Sort
             sortedJobs = Jobs.ToArray();

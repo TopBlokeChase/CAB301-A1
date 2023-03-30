@@ -27,34 +27,83 @@ namespace CAB301A1Project
 
         public bool Add(IJob job)
         {
-            //To be implemented by students
-            throw new System.NotImplementedException();
+            //To be implemented by students - Done
+            //Do commenting
+            if (this.Count >= this.Capacity) throw new ArgumentException();
+            if (this.Contains(job.Id))
+            {
+                return false;
+            }
+            jobs[count++] = job;
+            return true;
         }
 
         public bool Contains(uint id)
         {
-            //To be implemented by students
-            throw new System.NotImplementedException();
+            //To be implemented by students - Done
+            //Do commenting
+            for (int i = 0; i < this.Count; i++)
+            {
+                if (jobs[i].Id == id)
+                {
+                    return false;
+                }
+            }
+            return true;
 
         }
 
         public IJob? Find(uint id)
         {
             //To be implemented by students
-            throw new System.NotImplementedException();
+            //Do commenting
+            for (int i = 0; i < this.Count; i++)
+            {
+                if (jobs[i].Id == id)
+                {
+                    return jobs[i];
+                }
+            }
+            return null;
 
         }
 
         public bool Remove(uint id)
         {
-            //To be implemented by students
-            throw new System.NotImplementedException();
+            //To be implemented by students - Done
+            //Do commenting
+            IJob? tempJob = this.Find(id);
+            if (tempJob == null)
+            {
+                return false;
+            }
+            bool foundJob = false;
+            for (int i = 0; i < this.Count; i++)
+            {
+                if (tempJob.Id == jobs[i].Id)
+                {
+                    foundJob = true;
+                }
+                if (foundJob)
+                {
+                    jobs[i] = jobs[i+1];
+                }
+            }
+            this.count--;
+            return true;
         }
 
         public IJob[] ToArray()
         {
-            //To be implemented by students
-            throw new System.NotImplementedException();
+            //To be implemented by students - Done
+            //Do commenting
+            IJob[] newJobs;
+            newJobs = new Job[this.Capacity];
+            for (int i = 0; i < this.Count; i++)
+            {
+                newJobs[i] = jobs[i];
+            }
+            return newJobs;
         }
     }
 }

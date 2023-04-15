@@ -77,7 +77,7 @@ namespace CAB301A1Project
         {
             //To be implemented by students
             /// <summary>
-            /// Determines whether a supplied jog id is valid.
+            /// Determines whether a supplied job id is valid.
             /// </summary>
             /// <param><c>id</c> is an integer between 001 and 999 inclusive.</param>
             /// <returns>True if id is valid, False otherwise</returns>

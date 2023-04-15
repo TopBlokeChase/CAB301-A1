@@ -75,8 +75,11 @@ namespace CAB301A1Project
 
         public static bool IsValidId(uint id)
         {
-            //To be implemented by students - Done
-            //Add Commenting
+            //To be implemented by students
+            /// <summary>
+            /// Determines whether a supplied jog id is valid.
+            /// </summary>
+            /// <param><c>id</c> is an integer between 001 and 999 inclusive.</param>
             if (id >= 1 && id <= 999)
             {
                 return true;
@@ -86,8 +89,11 @@ namespace CAB301A1Project
 
         public static bool IsValidExecutionTime(uint executiontime)
         {
-            //To be implemented by students - Done
-            //Add Commenting
+            //To be implemented by students
+            /// <summary>
+            /// Determines whether a supplied execution time is valid.
+            /// </summary>
+            /// <param><c>executionTime</c> is an integer greater than 0.</param>
             if (executiontime <= 0)
             {
                 return false;
@@ -97,8 +103,11 @@ namespace CAB301A1Project
 
         public static bool IsValidPriority(uint priority)
         {
-            //To be implemented by students - Done
-            //Add Commenting
+            //To be implemented by students
+            /// <summary>
+            /// Determines whether a supplied priotiry is valid.
+            /// </summary>
+            /// <param><c>priority</c> is an integer between 1 and 9 inclusive.</param>
             if (priority >= 1 && priority <= 9)
             {
                 return true;
@@ -108,8 +117,11 @@ namespace CAB301A1Project
 
         public static bool IsTimeReceived(uint time)
         {
-            //To be implemented by students - Done
-            //Add Commenting
+            //To be implemented by students
+            /// <summary>
+            /// Determines whether a supplied time received is valid.
+            /// </summary>
+            /// <param><c>time</c> is an integer greater than 0.</param>
             if (time > 0)
             {
                 return true;

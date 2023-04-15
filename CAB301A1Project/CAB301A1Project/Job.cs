@@ -80,6 +80,7 @@ namespace CAB301A1Project
             /// Determines whether a supplied jog id is valid.
             /// </summary>
             /// <param><c>id</c> is an integer between 001 and 999 inclusive.</param>
+            /// <returns>True if id is valid, False otherwise</returns>
             if (id >= 1 && id <= 999)
             {
                 return true;
@@ -94,6 +95,7 @@ namespace CAB301A1Project
             /// Determines whether a supplied execution time is valid.
             /// </summary>
             /// <param><c>executionTime</c> is an integer greater than 0.</param>
+            /// <returns>True if execution time is valid, False otherwise</returns>
             if (executiontime <= 0)
             {
                 return false;
@@ -108,6 +110,7 @@ namespace CAB301A1Project
             /// Determines whether a supplied priotiry is valid.
             /// </summary>
             /// <param><c>priority</c> is an integer between 1 and 9 inclusive.</param>
+            /// <returns>True if priority is valid, False otherwise</returns>
             if (priority >= 1 && priority <= 9)
             {
                 return true;
@@ -122,6 +125,7 @@ namespace CAB301A1Project
             /// Determines whether a supplied time received is valid.
             /// </summary>
             /// <param><c>time</c> is an integer greater than 0.</param>
+            /// <returns>True if time received is valid, False otherwise</returns>
             if (time > 0)
             {
                 return true;

@@ -13,9 +13,11 @@
         public IJob[] FirstComeFirstServed()
         {
             Console.WriteLine("Frst-Come, First-Served Sort");
-            //To be implemented by students - Done
-            //Do commenting
-            //Uses Bubble Sort
+            //To be implemented by students
+            /// <summary>
+            /// Sorts the jobs in non-descending order of execution time, using Bubble Sort.
+            /// </summary>
+            /// <returns>Returns an array which contains all the jobs in this scheduler sorted in non-descending order of execution time.</returns>
             sortedJobs = Jobs.ToArray();
             IJob tempJob;
             Console.WriteLine("Before Sort");
@@ -46,9 +48,11 @@
         public IJob[] Priority()
         {
             Console.WriteLine("Priority Sort");
-            //To be implemented by students - Done
-            //Do commenting
-            //Uses Bubble Sort
+            //To be implemented by students
+            /// <summary>
+            /// Sorts the jobs in non-ascending order of priority, using Bubble Sort.
+            /// </summary>
+            /// <returns>Returns an array which contains all the jobs in this scheduler sorted in non-ascending order of priority.</returns>
             sortedJobs = Jobs.ToArray();
             IJob tempJob;
             Console.WriteLine("Before Sort");
@@ -80,9 +84,11 @@
         public IJob[] ShortestJobFirst()
         {
             Console.WriteLine("Shortest First Sort");
-            //To be implemented by students - Done
-            //Do commenting
-            //Uses Bubble Sort
+            //To be implemented by students
+            /// <summary>
+            /// Sorts the jobs in non-descending order of completion time, using Bubble Sort.
+            /// </summary>
+            /// <returns>Returns an array which contains all the jobs in this scheduler sorted in non-descending order of completion time.</returns>
             sortedJobs = Jobs.ToArray();
             IJob tempJob;
             Console.WriteLine("Before Sort");

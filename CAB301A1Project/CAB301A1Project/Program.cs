@@ -6,6 +6,23 @@ namespace CAB301A1Project
     {
         static void Main(string[] args)
         {
+            bool runProgram = true;
+            while (runProgram)
+            {
+                Menu();
+                Console.WriteLine("\n" +
+                                  "---Start again or Exit?---");
+                Console.WriteLine("1: Start again\n" +
+                                  "2: Exit");
+                string input = Console.ReadLine();
+                if (input == "2")
+                {
+                    runProgram = false;
+                }
+            }          
+        }
+        static void Menu()
+        {
             Console.WriteLine("+-------------------+\n" +
                               "| Main Method Start |\n" +
                               "+-------------------+");
@@ -47,10 +64,8 @@ namespace CAB301A1Project
                 default:
                     Console.WriteLine("Invalid Option");
                     break;
-            } 
-            
+            }
         }
-
         static void TestSorter()
         {
             Job job1 = new Job(1, 1, 5, 9);
